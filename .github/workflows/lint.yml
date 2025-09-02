@@ -4,13 +4,14 @@ on:
   push:
     branches:
       - 'main'
-  jobs:
-    lint:
-      runs-on: ubuntu-latest
-      steps:
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
  
-      - name: code checkout
-      uses: actions/checkout@v2
+    - name: code checkout
+    uses: actions/checkout@v2
  
-     - uses: astral-sh/ruff-action@v3
-     - run: ruff check
+   - name: lint with ruff 
+   uses: astral-sh/ruff-action@v3
+   run: ruff check
