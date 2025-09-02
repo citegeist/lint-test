@@ -1,9 +1,9 @@
 import re
+import json
 
-
-import pydantic
-import sys
-
+def test():
+  l = ''
+  return re.search(r'', l)
 
 if __name__ == "__main__":
-  print("Hello World!")
+  print(json.dumps({'Hello':'World'}))
